@@ -170,12 +170,13 @@ class _DemoWeekViewState extends State<_DemoWeekView> {
                       color: Colors.white,
                       border: Border.all(color: Colors.grey.shade100))),
               dates: [
+                date.subtract(const Duration(days: 2)),
                 date.subtract(const Duration(days: 1)),
                 date,
                 date.add(const Duration(days: 1)),
                 date.add(const Duration(days: 2)),
                 date.add(const Duration(days: 3)),
-                date.add(const Duration(days: 4))
+                // date.add(const Duration(days: 4))
               ],
               events: [
                 FlutterWeekViewEvent(
